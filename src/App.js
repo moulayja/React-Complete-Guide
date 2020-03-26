@@ -31,9 +31,22 @@ const app = props => {
         <h1>Hello, I am React App</h1>
         <p>This is working App</p>
         <button onClick={switchNameHandler}>Switch Name</button>
-        <Person name={personState.persons[0].name} age = {personState.persons[0].age}/>
-        <Person name = {personState.persons[1].name} age = {personState.persons[1].age}> My Hobbies are: Reading and cooking</Person>
-        <Person name = {personState.persons[2].name} age =  {personState.persons[2].age}/>
+        <Person
+         name={personState.persons[0].name}
+         age = {personState.persons[0].age}
+         click = {switchNameHandler}
+        />
+        <Person
+         name = {personState.persons[1].name}
+         age = {personState.persons[1].age}
+         >
+         My Hobbies are: Reading and cooking
+         </Person>
+        <Person
+         name = {personState.persons[2].name}
+         age =  {personState.persons[2].age}
+         click = {switchNameHandler}
+        />
       </div>
     );
 }
